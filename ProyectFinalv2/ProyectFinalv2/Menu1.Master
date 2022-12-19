@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Menu1.master.cs" Inherits="ProyectFinalv2.Menu1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="StyleMenu.css" rel="stylesheet" />
+    <link href="Styleprincipal.css" rel="stylesheet" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                  </asp:ContentPlaceHolder>
+        <div class="navbar">
+  <a href="Loguin.aspx">Inicio</a>
+  <div class="subnav">
+    <button class="subnavbtn">Facturacion <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="Facturacion.aspx">Facturacion</a>
+ 
+    </div>
+  </div> 
+  <div class="subnav">
+    <button class="subnavbtn">Catalogo <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="ModUsuario.aspx">Usuarios</a>
+      <a href="Productos.aspx">Productos</a>
+
+    </div>
+  </div> 
+ 
+</div>
+
+<div style="padding:0 16px">
+  <h3>&nbsp;</h3>
+  <p></p>
+</div>
+    </form>
+</body>
+</html>
